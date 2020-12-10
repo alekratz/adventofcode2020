@@ -61,7 +61,7 @@ fn part1(nums: &Vec<usize>) -> usize {
 fn part2(nums: &Vec<usize>, invalid: usize) {
     println!("Part 2");
     println!("======");
-    for len in 1..nums.len() {
+    for len in 2..nums.len() {
         // try every window of length nums.len() .. 1
         for window in nums.as_slice().windows(len) {
             let sum = window.iter().sum::<usize>();
